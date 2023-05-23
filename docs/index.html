@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
 
     <style>
-        .header {
+        /* .header {
             display: flex;
             background-color: white;
             height: 50%;
@@ -55,8 +55,23 @@
           padding: 0;
           width : 100%;
           justify-content: flex-end;
+        } */
+        .top-bar{
+          display: flex;
+          background-color: black;
+          height: 100px;
+          color: white;
+
         }
-        
+        .top-bar .menu-box-1 > ul{
+          display:flex;
+        }
+        .flex{
+          display : flex;
+        }
+        .flex-ai-c{
+          align-items: center;
+        }
         
     </style>
 </head>
@@ -90,7 +105,7 @@
         </div>
       </nav> -->
 
-    <header>
+    <!-- <header>
       <div class="header">
         <button class="logo"><img src="../img/시작.png" style="max-width: 100%; height: auto;"></button>
         <div class="container">
@@ -109,6 +124,23 @@
         </div>
         <button class="login">login</button>
       </div>
+    </header> -->
+    <header>
+      <div class="top-bar flex">
+        <a href="/" class="flex flex-ai-c">여기에 로고</a>
+        <nav class="menu-box-1 flex">
+          <ul>
+            <li class="flex"><a href="/" class="flex flex-ai-c">일반</a></li>
+            <li class="flex"><a href="/" class="flex flex-ai-c">소설</a></li>
+            <li class="flex"><a href="/" class="flex flex-ai-c">웹툰</a></li>
+            <li class="flex"><a href="/" class="flex flex-ai-c">로맨스</a></li>
+            <li class="flex"><a href="/" class="flex flex-ai-c">만화</a></li>
+            <li class="flex"><a href="/" class="flex flex-ai-c">판타지</a></li>
+        
+          </ul>
+        </nav>
+      </div>
+      <div class="box-1"></div>
     </header>
 
     <div class="p-5 mb-4 bg-body-tertiary rounded-3">
