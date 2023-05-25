@@ -1,0 +1,117 @@
+body{
+    display : flex;
+    flex-direction: column;
+  }
+  html, body{
+    height:100%;
+  }
+  .flex-container {
+    display : flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+  .top-bar{
+    display: flex;
+    background-color: black;
+    height: 100px;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+
+  }
+  .top-bar .menu-box-1 > ul{
+    display:flex;
+  }
+  .top-bar .menu-box-2 > ul{
+    display:flex;
+  }
+  .flex{
+    display : flex;
+  }
+  .flex-ai-c{
+    align-items: center;
+  }
+  .flex-jc-sb{
+    justify-content: space-between
+  }
+  footer{
+    background-color: lightgray;
+  }
+
+  /*
+    login style
+  */
+  article {
+    display: block;
+  }
+  #content {
+      position: relative;
+      width: 650px;
+      margin: 0 auto 100px;
+      padding: 60px;
+      box-sizing: border-box;
+      background: #fff;
+      box-shadow: 10px 10px 20px rgb(0 0 0 / 5%);
+  }
+  form {
+      display: block;
+      margin-top: 0em;
+  }
+  ul {
+      display: block;
+      list-style-type: disc;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px;
+  }
+  li {
+      display: list-item;
+      text-align: -webkit-match-parent;
+  }
+  #login_button button {
+      position: relative;
+      width: 100%;
+      line-height: 60px;
+      font-size: 1.24rem;
+      color: #fff;
+      background: #10c461;
+      text-align: center;
+      margin: 20px 0 0;
+      cursor: pointer;
+      border: #10c461;
+  }
+  button {
+        appearance: auto;
+        writing-mode: horizontal-tb !important;
+    
+        text-rendering: auto;
+        color: buttontext;
+        letter-spacing: normal;
+        word-spacing: normal;
+        line-height: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: center;
+        align-items: flex-start;
+        cursor: default;
+        box-sizing: border-box;
+        background-color: antiquewhite;
+        margin: 0em;
+        padding: 1px 6px;
+        border-width: 2px;
+        border-style: outset;
+        border-color: buttonborder;
+        border-image: initial;
+  }
+  #join_button a{
+      display: block;
+      line-height: 50px;
+      text-align: center;
+      border: 1px solid #ddd;
+      transition: all .3s;
+  }
