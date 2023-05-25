@@ -22,6 +22,9 @@
 <loc>http://localhost:4000/lay2.html</loc>
 </url>
 <url>
+<loc>http://localhost:4000/login.html</loc>
+</url>
+<url>
 <loc>http://localhost:4000/romance.html</loc>
 </url>
 <url>
@@ -31,11 +34,11 @@
 <loc>http://localhost:4000/webtoon.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/join.html</loc>
-<lastmod>2023-05-24T09:34:45+09:00</lastmod>
+<loc>http://localhost:4000/heroes.html</loc>
+<lastmod>2023-05-24T17:03:33+09:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/login.html</loc>
-<lastmod>2023-05-24T09:33:48+09:00</lastmod>
+<loc>http://localhost:4000/join.html</loc>
+<lastmod>2023-05-24T15:58:35+09:00</lastmod>
 </url>
 </urlset>
