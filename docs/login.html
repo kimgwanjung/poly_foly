@@ -1,31 +1,3 @@
-
-
-<!-- <article id="content">
-    <h2>Hana E-book 로그인</h2>
-    <p>아이디와 비밀번호를 입력해주세요</p>
-    <form name="member_form" method="post" action="login.php"> 
-        <div id="id_pw_input">
-            <ul>
-                <li><input type="text" name="id" class="login_input" placeholder="아이디를 입력하세요" required=""></li>
-                <li><input type="password" name="pass" class="login_input" placeholder="비밀번호를 입력하세요" required=""></li>
-            </ul>						
-        </div>
-        <div id="login_button">
-            <button type="submit">로그인</button>
-        </div>
-        <div id="join_button">
-            <a href="./join.html">회원가입</a>
-        </div>
-
-        <ul class="findLink">
-            <li>아이디 혹은 비밀번호를 잊으셨나요?</li>
-            <li>
-                <span><a href="id_find.php">아이디 찾기</a></span>
-                <span><a href="pw_find.php">비밀번호 찾기</a></span>
-            </li>
-        </ul>
-</form>
-</article> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,10 +25,49 @@
             <div class="btn-area">
                 <button type="submit">Login</button>
             </div>
+            <div class="save-area">
+                <label>
+                    <input type="checkbox" id="saveIdCheckbox"> 아이디 저장
+                </label>
+            </div>
         </form>
         <div class="caption">
             <a href="">Forgot Password?</a>
         </div>
     <section>
+        <script>
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        // 쿠키 가져오기 함수
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        // 로그인 폼의 아이디 필드에 쿠키 값 설정
+        document.getElementById("id").value = getCookie("savedId");
+
+        // 아이디 저장 버튼 클릭 시 쿠키에 아이디 저장
+        document.getElementById("saveIdButton").addEventListener("click", function (event) {
+            var id = document.getElementById("id").value;
+            setCookie("savedId", id, 365); // 365일 동안 쿠키 저장
+        });
+        </script>
 </body>
 </html>
