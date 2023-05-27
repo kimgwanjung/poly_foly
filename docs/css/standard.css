@@ -1,0 +1,12 @@
+.prod_area .prod_thumb_box .img_box {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #eaeaea;
+}
+
+img{
+    width:250px;
+    height: 365px;
+}
