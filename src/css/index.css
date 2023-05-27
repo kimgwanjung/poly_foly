@@ -1,3 +1,10 @@
+
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  
 body{
     display : flex;
     flex-direction: column;
@@ -31,6 +38,23 @@ body{
   }
   .flex-ai-c{
     align-items: center;
+    margin:  0 40px;
+    font-size: 19px;
+    color: #fff;
+  }
+
+  .flex-ai-login{
+    margin:  0 10px;
+    font-size: 14px;
+    color: #fff;
+  }
+  .flex-ai-c:hover{
+    color: #fff;
+    transition: all .3s ease-in-out;
+  }
+  .flex-ai-login:hover{
+    color: #fff;
+    transition: all .3s ease-in-out;
   }
   .flex-jc-sb{
     justify-content: space-between
@@ -75,7 +99,7 @@ body{
       position: relative;
       width: 100%;
       line-height: 60px;
-      font-size: 1.24rem;
+      font-size: 18px;
       color: #fff;
       background: #10c461;
       text-align: center;
@@ -115,3 +139,52 @@ body{
       border: 1px solid #ddd;
       transition: all .3s;
   }
+
+
+  @media (max-width:1250px) {
+    .flex-ai-c{
+      align-items: center;
+      margin:  0 15px;
+      font-size: 14px;
+    }
+}
+@media (max-width:1050px) {
+  .flex-ai-c{
+    align-items: center;
+    margin:  0 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width:850px) {
+  .flex-ai-c{
+    align-items: center;
+    margin:  0 10px;
+    font-size: 14px;
+  }
+}
+@media (max-width:850px) {
+  .login-tab{
+  display: none;
+  }
+}
+@media (max-width:710px) {
+  .logo-tab{
+    display: none;
+  }
+}
+@media (max-width:610px) {
+  .flex-ai-c{
+    align-items: center;
+    margin:  0 7px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width:560px) {
+  .flex-ai-c{
+    align-items: center;
+    margin:  0 6px;
+    font-size: 10px;
+  }
+}

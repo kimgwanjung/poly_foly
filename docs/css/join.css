@@ -96,7 +96,7 @@ color:#fff
 }
 
 .placehold-text:before{ 
-    content : "@naver.com";
+    content : "";
     position:absolute; /*before은 inline 요소이기 때문에 span으로 감싸줌 */
     right : 20px;
     top:13px;
