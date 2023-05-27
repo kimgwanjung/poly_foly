@@ -1,36 +1,67 @@
 ---
 layout: base
 ---
+<link rel="stylesheet" href="./css/index.css">
 
-<div class="p-5 mb-4 bg-body-tertiary rounded-3">
-    <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+    <div class="banner-container">
+        <div class="banner">
+        <div data-index=1>
+
+                <img src="./img/1.jpg" alt="Image">
+
+        </div>
+        <div data-index=2></div>
+
+                <img src="./img/2.jpg" alt="Image">
+
+        <div data-index=3></div>
+
+                <img src="./img/3.jpg" alt="Image">
+
+        <div data-index=4></div>
+
+                <img src="./img/4png.png" alt="Image">
+        </div>
     </div>
-</div>
-<div class="p-5 mb-4 bg-body-tertiary rounded-3">
-    <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+
+
+    <div class="list-button">
+        <span class="list-button-item active"></span> 
+        <span class="list-button-item"></span> 
+        <span class="list-button-item"></span> 
+        <span class="list-button-item"></span> 
     </div>
-</div>
-<div class="p-5 mb-4 bg-body-tertiary rounded-3">
-    <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+
+    <div class="container">
+    
+        <div class="inner">
+            <input type="search">
+            <div class="searching">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="icon_ect">
+                <i class="fas fa-keyboard"></i>
+                <i class="fas fa-microphone"></i>
+            </div>
+        </div>
     </div>
-</div>
-<div class="p-5 mb-4 bg-body-tertiary rounded-3">
-    <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+
+
+
+    <div class="box">
+        <div class = "today-head">
+            <h2>오늘의 책</h2>
+        </div>
+    <!--div를 두개 감싼이유는 img들을 좌우배치하고 배치된 사진중 한장만 보이게 하기 위해서이다.-->
+            <div class="slide"> <!--배치된 img들을 하나의 img만 보이게 가리기 위한 태그-->
+            <div class="images"> <!--img들을 좌우배치할 태그-->
+                <img src="./img/todaybook1.jpg">
+                <img src="./img/todaybook2.jpg">
+                <img src="./img/todaybook3.jpg">
+            </div>
+            </div>
+            <button class="back today-button">❮</button>
+            <button class="next today-button">❯</button>
     </div>
-</div>
-
-
-
-
+    <script src="./js/today-slide.js"></script>
+    

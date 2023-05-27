@@ -4,11 +4,16 @@
     color: #333;
   }
 
-  
-body{
+  body {
     display : flex;
     flex-direction: column;
-  }
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: "Roboto", "Noto Sans KR", "PingFang SC", "Apple SD Gothic Neo", "Microsoft YaHei UI", "Malgun Gothic", sans-serif;
+    min-width: 1440px;
+    color: #000;
+}
+
   html, body{
     height:100%;
   }
@@ -20,9 +25,9 @@ body{
   }
   .top-bar{
     display: flex;
-    background-color: black;
+    background-color: white;
     height: 100px;
-    color: white;
+    color: black;
     padding-left: 100px;
     padding-right: 100px;
 
@@ -39,17 +44,17 @@ body{
   .flex-ai-c{
     align-items: center;
     margin:  0 40px;
-    font-size: 19px;
-    color: #fff;
+    font-size: 14px;
+    color: black;
   }
 
   .flex-ai-login{
     margin:  0 10px;
     font-size: 14px;
-    color: #fff;
+    color: rgb(102, 98, 98);
   }
   .flex-ai-c:hover{
-    color: #fff;
+    color: green;
     transition: all .3s ease-in-out;
   }
   .flex-ai-login:hover{
@@ -139,9 +144,103 @@ body{
       border: 1px solid #ddd;
       transition: all .3s;
   }
+  /* .gnb_search_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    width: 560px;
+    height: 48px;
+    padding-right: 14px;
+    border-radius: 25px;
+    background: #fff;
+    border: 1px solid #5055b1;
+    box-sizing: border-box;
+    border: 1px solid #156cdd;
+} */
+.container {
+  text-align: center;
+}
 
 
-  @media (max-width:1250px) {
+.inner {
+  position: relative;
+  width: 600px;
+  height: 40px;
+  margin: 20px auto;
+  border: 1px solid #bdc1c6;
+  border-radius: 20px;
+}
+
+input {
+  width: 90%;
+  height: 100%;
+  border-color: #bdc1c6;
+  border: 0px;
+  font-size: 16px;
+  outline: none;
+}
+
+.searching {
+  position: absolute;
+  left: 10px;
+  top: 20%;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.icon_ect {
+  position: absolute;
+  right: 10px;
+  top: 20%;
+}
+
+.fa-keyboard {
+  margin-right: 10px;
+}
+
+.weegle_inner {
+  width: 160px;
+  height: 40px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 0px;
+  vertical-align: middle;
+}
+
+.weegle_inner:hover {
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+@media (max-width:1250px) {
     .flex-ai-c{
       align-items: center;
       margin:  0 15px;
@@ -187,4 +286,173 @@ body{
     margin:  0 6px;
     font-size: 10px;
   }
+}
+
+
+
+
+/*index 슬라이드 구현*/
+img {
+  width: 1200px;
+  height : 340px
+  
+}
+.banner-container{
+  width:1200px;
+  height:340px;
+  /* overflow:hidden; */
+}
+.banner{
+  width:1200pxs;
+  height:100%;
+  display:flex;
+  animation: animation1 10s infinite;
+  /*기본 전환 animation을 위한 설정*/
+  -webkit-transition: all 0.5s cubic-bezier(1, .01, .32, 1);
+  -moz-transition: all 0.5s cubic-bezier(1, .01, .32, 1);
+  -o-transition: all 0.5s cubic-bezier(1, .01, .32, 1);
+  -ms-transition: all 0.5s cubic-bezier(1, .01, .32, 1);
+  transition: all 0.5s cubic-bezier(1, .01, .32, 1);
+}
+.banner>div{
+  width:100vw;
+  height:800px;
+}
+.banner>div:nth-child(1){
+  background-color:white;
+}
+.banner>div:nth-child(2){
+  background-color: white;;
+}
+.banner>div:nth-child(3){
+  background-color:white;;
+}
+.banner>div:nth-child(4){
+  background-color: white;;
+}
+.list-button{
+  width:100%;
+  height:10px;
+  display:flex;
+  justify-content:center;
+  margin-top:-30px;
+  position:absolute;
+  z-index:2;
+}
+.list-button-item{
+  width:10px;
+  height:10px;
+  border-radius:5rem;
+  background-color:black;
+  cursor: pointer;
+  display: inline-block;
+  margin:6px;
+}
+.list-button-item.active{
+  background-color:white;
+}
+@keyframes animation1 {
+  0% {margin-left: 0}
+  20% {margin-left: 0}
+  25% {margin-left: -100%}
+  45% {margin-left: -100%}
+  50% {margin-left: -200%}
+  70% {margin-left: -200%}
+  75% {margin-left: -300%}
+  95% {margin-left: -300%}
+  100% {margin-left: 0}
+}
+@keyframes animation2 {
+  0% {margin-left: -100%}
+  20% {margin-left: -100%}
+  25% {margin-left: -200%}
+  45% {margin-left: -200%}
+  50% {margin-left: -300%}
+  70% {margin-left: -300%}
+  75% {margin-left: 0}
+  95% {margin-left: 0}
+  100% {margin-left: -100%}
+}
+@keyframes animation3 {
+  0% {margin-left: -200%}
+  20% {margin-left: -200%}
+  25% {margin-left: -300%}
+  45% {margin-left: -300%}
+  50% {margin-left: 0}
+  70% {margin-left: 0}
+  75% {margin-left: -100%}
+  95% {margin-left: -100%}
+  100% {margin-left: -200%}
+}
+@keyframes animation4 {
+  0% {margin-left: -300%}
+  20% {margin-left: -300%}
+  25% {margin-left: 0}
+  45% {margin-left: 0}
+  50% {margin-left: -100%}
+  70% {margin-left: -100%}
+  75% {margin-left: -200%}
+  95% {margin-left: -200%}
+  100% {margin-left: -300%}
+}
+
+
+/*오늘의 책*/
+.today-head h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #000;
+  font-weight: 700;
+  margin-left: 200px;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+} 
+
+.box{
+  width: 250px; 
+  margin: 0 auto; /**중앙 정렬한다.**/
+}
+
+/**사진**/
+.slide{ /**이만큼의 크기로 보이겠다는 의미**/
+  width:250px; height:333px;/**사진보다 크면 다음 사진까지 표시되어 img와 slide크기를 맞춘다.**/
+  overflow: hidden;/**이미지는 내장이라 overflow:hidden을 사용해 넘친 사진들을 안보이게 한다.**/
+}
+.images{
+  display: flex; /**좌우 슬라이드를 위해 flex로 사진을 가로정렬한다.**/
+  height:333px; /**slide와 images의 높이가 다르면 부자연스럽게 표시돼 slide의 높이에 맞게 높이를 바꾼다.**/
+  transition: transform 0.5s;
+/**어떤 속성에 대해 애니메이션 효과를 주는 속성이다. 
+tranform속성에 0.5초의 듀레이션(동작의 시작해서 끝나는 시간)을 준다.**/
+}
+img{
+
+}
+
+/**버튼위치**/
+.back{
+  position:relative;
+  bottom: 170px; right: 35px;
+}
+.next{
+  position:relative;
+  bottom: 170px; left: 220px;
+}
+
+/**버튼디자인**/
+.today-button{
+  width: 30px; height: 30px;
+  color: white;
+  background: #646464;
+}
+button:active{/**버튼을 클릭하는 동안 색을 바꾼다.**/
+  background:#3e3e3e;
+}
+button:disabled{/**버튼 속성이 disabled되면 색을 바꾼다.**/
+  background: #cbcaca;
 }
