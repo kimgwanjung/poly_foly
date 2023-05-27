@@ -1,57 +1,29 @@
 /*오늘의 책*/
-.today-head h2 {
-    margin-bottom: 20px;
-    font-size: 20px;
-    color: #000;
-    font-weight: 700;
-    margin-left: 200px;
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-  } 
-  
-  .box{
-    width: 250px; 
-    margin: 0 auto; /**중앙 정렬한다.**/
-  }
-  
-  /**사진**/
-  .slide{ /**이만큼의 크기로 보이겠다는 의미**/
-    width:250px; height:333px;/**사진보다 크면 다음 사진까지 표시되어 img와 slide크기를 맞춘다.**/
-    overflow: hidden;/**이미지는 내장이라 overflow:hidden을 사용해 넘친 사진들을 안보이게 한다.**/
-  }
-  .images{
-    display: flex; /**좌우 슬라이드를 위해 flex로 사진을 가로정렬한다.**/
-    height:333px; /**slide와 images의 높이가 다르면 부자연스럽게 표시돼 slide의 높이에 맞게 높이를 바꾼다.**/
-    transition: transform 0.5s;
-  /**어떤 속성에 대해 애니메이션 효과를 주는 속성이다. 
-  tranform속성에 0.5초의 듀레이션(동작의 시작해서 끝나는 시간)을 준다.**/
-  }
-  
-  
-  /**버튼위치**/
-  .back{
-    position:relative;
-    bottom: 170px; right: 35px;
-  }
-  .next{
-    position:relative;
-    bottom: 170px; left: 220px;
-  }
-  
-  /**버튼디자인**/
-  .today-button{
-    width: 30px; height: 30px;
-    color: white;
-    background: #646464;
-  }
-  button:active{/**버튼을 클릭하는 동안 색을 바꾼다.**/
-    background:#3e3e3e;
-  }
-  button:disabled{/**버튼 속성이 disabled되면 색을 바꾼다.**/
-    background: #cbcaca;
-  }
+html, body { box-sizing: border-box; padding: 0; margin: 0; text-align: center; }
+*, *:before, *:after { box-sizing: inherit; }
+.clearfix:after { content: ''; display: block; clear: both; float: none; }
+.title { margin-bottom: 0; text-align: center; font-size: 30px; color: #333; }
+.link, .link:visited { display: inline-block; margin: 20px 0; color: #555; text-decoration: none; font-weight: bold; }
+.link:hover, .link:focus { color: #9fd6c2; }
+/* container - body */
+#container { width: 1000px; margin: auto; }
+.slide_wrap { position: relative; width: 400px; margin: auto; padding-bottom: 30px; }
+.slide_box { width: 100%; margin: auto; overflow-x: hidden; }
+.slide_content { display: table; float: left; width: 400px; height: 400px; }
+.slide_content > p { display: table-cell; vertical-align: middle; text-align: center; font-size: 100px; font-weight: bold; color: #555; }
+.slide_content.slide01 { background: #ddbdff; }
+.slide_content.slide02 { background: #9fd6c2; }
+.slide_content.slide03 { background: #abe2f7; }
+.slide_content.slide04 { background: #f08c78; }
+.slide_content.slide05 { background: #fbdb65; }
+.slide_btn_box > button { position: absolute; top: 50%; margin-top: -45px; width: 60px; height: 60px; font-size: 16px; color: #999; background: none; border: 1px solid #ddd; cursor: pointer; }
+.slide_btn_box > .slide_btn_prev { left: -100px; }
+.slide_btn_box > .slide_btn_next { right: -100px; }
+.slide_pagination { position: absolute; left: 50%; bottom: 0; list-style: none; margin: 0; padding: 0; transform: translateX(-50%); }
+.slide_pagination .dot { display: inline-block; width: 15px; height: 15px; margin: 0 5px; overflow: hidden; background: #ddd; border-radius: 50%; transition: 0.3s; }
+.slide_pagination .dot.dot_active { background: #333; }
+.slide_pagination .dot a { display: block; width: 100%; height: 100%; }
+
+.today-img{
+    width: auto;
+}
