@@ -1,5 +1,5 @@
 function fetchTodayBookList() {
-  fetch('../_data/todayBook.json')
+  fetch('./_data/todayBook.json')
     .then((response) => response.json())
     .then((data) => {
       const bookListWrapper = document.querySelector(".book-list-wrapper");
