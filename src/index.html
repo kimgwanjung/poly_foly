@@ -91,43 +91,43 @@ layout: base
     <div class="title">오늘의 책</div>
     <div class="book-list-wrapper">
         {% for book in site.data.todayBook.data %}
-        <div class="book-item-wrapper">
+        <a class="book-item-wrapper">
             <img alt="{{ book.title }}" class="book-img" src="{{ book.image }}">
             <div class="book-title">{{ book.title }}</div>
             <div class="author">{{ book.author }}</div>
             <div class="price"><span class="price-bold">{{ book.price }}</span>원</div>
-        </div>
+        </a>
+
         {% endfor %}
     </div>
     <div class="title">md 추천도서</div>
-    <div class="book-list-wrapper">
+    <div class="book-list-suggestion-wrapper">
         {% for book in site.data.suggestionBook.data %}
-        <div class="book-list-suggestion-wrapper">
+        <a class="book-item-wrapper">
             <img alt="{{ book.title }}" class="book-img" src="{{ book.image }}">
             <div class="book-title">{{ book.title }}</div>
             <div class="author">{{ book.author }}</div>
             <div class="price"><span class="price-bold">{{ book.price }}</span>원</div>
-        </div>
+        </a>
+        {% endfor %}
+    </div>
+    <div class="title">오디오</div>
+    <div class="book-list-suggestion-wrapper">
+        {% for book in site.data.audioBook.data %}
+        <a class="book-item-wrapper">
+            <img alt="{{ book.title }}" class="book-img" src="{{ book.image }}">
+            <div class="book-title">{{ book.title }}</div>
+            <div class="author">{{ book.author }}</div>
+            <div class="price"><span class="price-bold">{{ book.price }}</span>원</div>
+        </a>
         {% endfor %}
     </div>
 </div>
 
 
 <script src="./js/today-slide.js"></script>
-<!-- // 오늘의 책 리스트 data fetch script모듈화 -->
+
 <script src="./js/fetchTodayBookList.js">
 </script>
-<!-- // MD 추천 리스트 data fetch script 모듈화 -->
+
 <script src="./js/fetchSuggestionBookList.js"></script>
-<script src="./_data/todayBook.json" type="application/json">
-
-</script>
-<!-- // data fetch 함수  모듈화-->
-<script>
-
-  fetchTodayBookList();
-  fetchSuggestionBookList();
-</script>
-
-
-

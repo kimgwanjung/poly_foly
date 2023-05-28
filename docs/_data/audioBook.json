@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "title": "컨티뉴어스",
+      "author": "윤소정 저자",
+      "price":"19,800",
+      "image":"./img/audio1.jpeg"
+    },
+    {
+      "title": "서영동 이야기",
+      "author": "조남주",
+      "price":"16,200",
+      "image":"./img/audio2.jpeg"
+    },
+    {
+      "title": "이 사람을 보라",
+      "author": "니체",
+      "price":"13,680",
+      "image":"./img/audio3.jpeg"
+    },
+    {
+      "title": "책이 사라진 날",
+      "author": "고정욱",
+      "price":"8,900",
+      "image":"./img/audio5.jpeg"
+    },
+    {
+      "title": "영혼의 설계자",
+      "author": "존 르 카레",
+      "price":"12,000",
+      "image":"./img/audio4.jpeg"
+    }
+  ]
+}
