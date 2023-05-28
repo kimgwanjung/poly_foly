@@ -1,5 +1,5 @@
 function fetchSuggestionBookList() {
-  fetch('_data/suggestionBook.json')
+  fetch('/_data/suggestionBook.json')
     .then((response) => response.json())
     .then((data) => {
       const bookListWrapper = document.querySelector(
