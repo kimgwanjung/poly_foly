@@ -107,7 +107,7 @@
             <!-- // .slide_list -->
         </div>
         <!-- // .slide_box -->
-        <div class="slide_btn_box">
+        <div class="slide_btn_box">ㅣ
             <button class="slide_btn_prev" type="button"> <</button>
             <button class="slide_btn_next" type="button"> ></button>
         </div>
@@ -124,9 +124,81 @@
 <div id="book-wrapper">
     <div class="title">오늘의 책</div>
     <div class="book-list-wrapper">
+        
+        <div class="book-item-wrapper">
+            <img alt="취미는 사생활" class="book-img" src="./img/todaybook1.jpg">
+            <div class="book-title">취미는 사생활</div>
+            <div class="author">장지영 저자</div>
+            <div class="price"><span class="price-bold">9,600</span>원</div>
+        </div>
+        
+        <div class="book-item-wrapper">
+            <img alt="실버뷰" class="book-img" src="./img/todaybook2.jpg">
+            <div class="book-title">실버뷰</div>
+            <div class="author">존 르 카레</div>
+            <div class="price"><span class="price-bold">11,340</span>원</div>
+        </div>
+        
+        <div class="book-item-wrapper">
+            <img alt="각각의 계절" class="book-img" src="./img/todaybook3.jpg">
+            <div class="book-title">각각의 계절</div>
+            <div class="author">다락원</div>
+            <div class="price"><span class="price-bold">13,400</span>원</div>
+        </div>
+        
+        <div class="book-item-wrapper">
+            <img alt="평온한 삶" class="book-img" src="./img/todaybook4.jpg">
+            <div class="book-title">평온한 삶</div>
+            <div class="author">이형석</div>
+            <div class="price"><span class="price-bold">8,900</span>원</div>
+        </div>
+        
+        <div class="book-item-wrapper">
+            <img alt="도파민 네이션" class="book-img" src="./img/todaybook5.jpg">
+            <div class="book-title">도파민 네이션</div>
+            <div class="author">팀 켈러</div>
+            <div class="price"><span class="price-bold">12,000</span>원</div>
+        </div>
+        
     </div>
     <div class="title">md 추천도서</div>
-    <div class="book-list-suggestion-wrapper">
+    <div class="book-list-wrapper">
+        
+        <div class="book-list-suggestion-wrapper">
+            <img alt="유연함의 힘" class="book-img" src="./img/st1.jpg">
+            <div class="book-title">유연함의 힘</div>
+            <div class="author">장지영 저자</div>
+            <div class="price"><span class="price-bold">9,600</span>원</div>
+        </div>
+        
+        <div class="book-list-suggestion-wrapper">
+            <img alt="도파미네이션" class="book-img" src="./img/st2.jpg">
+            <div class="book-title">도파미네이션</div>
+            <div class="author">양귀자</div>
+            <div class="price"><span class="price-bold">11,340</span>원</div>
+        </div>
+        
+        <div class="book-list-suggestion-wrapper">
+            <img alt="도둑맞은 집중력" class="book-img" src="./img/st3.jpg">
+            <div class="book-title">도둑맞은 집중력</div>
+            <div class="author">이임숙</div>
+            <div class="price"><span class="price-bold">13,400</span>원</div>
+        </div>
+        
+        <div class="book-list-suggestion-wrapper">
+            <img alt="평온한 삶" class="book-img" src="./img/st4.jpg">
+            <div class="book-title">평온한 삶</div>
+            <div class="author">박빛나</div>
+            <div class="price"><span class="price-bold">8,900</span>원</div>
+        </div>
+        
+        <div class="book-list-suggestion-wrapper">
+            <img alt="모순" class="book-img" src="./img/st5.jpg">
+            <div class="book-title">모순</div>
+            <div class="author">존 르 카레</div>
+            <div class="price"><span class="price-bold">12,000</span>원</div>
+        </div>
+        
     </div>
 </div>
 
@@ -137,10 +209,14 @@
 </script>
 <!-- // MD 추천 리스트 data fetch script 모듈화 -->
 <script src="./js/fetchSuggestionBookList.js"></script>
+<script src="./_data/todayBook.json" type="application/json">
+
+</script>
 <!-- // data fetch 함수  모듈화-->
 <script>
-    fetchTodayBookList();
-    fetchSuggestionBookList();
+
+  fetchTodayBookList();
+  fetchSuggestionBookList();
 </script>
 
 
