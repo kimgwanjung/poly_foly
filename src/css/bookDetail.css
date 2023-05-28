@@ -6,8 +6,8 @@
 }
 
 .book-imgs {
-    width: 380px;
-    height: 540px;
+    width: 300px;
+    height: 340px;
     padding-right: 70px;
 }
 
@@ -106,4 +106,9 @@
     font-size: 14px;
 }
 
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 
