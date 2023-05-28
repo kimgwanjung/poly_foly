@@ -1,48 +1,397 @@
----
-layout: base
----
-<link rel="stylesheet" href="./css/standard.css">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="shopcss.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+</head>
+<head>
+    <style>
+        .navbar{
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
 
-<div>
-    <p>일반</p>
-</div>
-<hr>
-<div class="prod_link_box size_lg" >
-    <a class="prod_link" href="./st1.html">
-        <span clss ="img_box">
-            <span class="img_box">
-                <img src="./img/st1.jpg" alt="">
-            </span>
-        </span>
-    </a>
+}
 
-    <a class="prod_link" href="/">
-        <span clss ="img_box">
-            <span class="img_box">
-                <img src="./img/st2.jpg" alt="">
-            </span>
-        </span>
-    </a>
-    <a class="prod_link" href="/">
-        <span clss ="img_box">
-            <span class="img_box">
-                <img src="./img/st3.jpg" alt="">
-            </span>
-        </span>
-    </a>
-    <a class="prod_link" href="/">
-        <span clss ="img_box">
-            <span class="img_box">
-                <img src="./img/st4.jpg" alt="">
-            </span>
-        </span>
-    </a>
-    <a class="prod_link" href="/">
-        <span clss ="img_box">
-            <span class="img_box">
-                <img src="./img/st5.jpg" alt="">
-            </span>
-        </span>
-    </a>
-</div>
+.hero-header{
+    height: 450px;
+    background-image: url("http://image.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/22/70949/i_1624_450.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+    
+.navbar #logo{
+    line-height: 60px;
+}
 
+.navbar img{
+    vertical-align: top;
+    border: blanchedalmond 5px solid;
+}
+
+.navbar #menu{
+    float: right;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar #menu li{
+    float: left;
+    margin-left: 50px;
+    line-height: 60px;
+}
+
+.navbar #menu li a{
+    color: #545454;
+    font-size: 13px;
+    text-decoration: none;
+}
+.product-list{
+    width: 735px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.products h3{
+    font-size: 24px;
+    color: #545454;
+    margin-top:60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.product{
+    display: block;
+    width: 225px;
+    text-align: center;
+    text-decoration:none;
+    color: black;
+    float:left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.product-name{
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+.clearfix{
+    clear: both;
+}
+.footer{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.footer a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration:none;
+}
+.prodDt_price p span {
+    margin-left: 3px;
+    min-width: 57px;
+    font-size: 14px;
+    color: #000;
+    text-align: right;
+    letter-spacing: -0.5px;
+}
+.prodDt_price p {
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href="/" id="logo">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbelPXk%2Fbtq3htE0CuW%2F20UUE0cydRQEDvD6wlEL1K%2Fimg.png" height="60">
+        </a>
+
+        <ul id="menu">
+            <li><a href="#"><b>일반</b></a></li>
+            <li><a href="#"><b>소설</b></a></li>
+            <li><a href="#"><b>웹툰</b></a></li>
+            <li><a href="#"><b>로맨스</b></a></li>
+            <li><a href="#"><b>만화</b></a></li>
+            <li><a href="#"><b>판타지</b></a></li>
+        </ul>
+    </div>
+
+    <div class="hero-header"></div>
+    <div class="products">
+        <h3>일반</h3>
+
+        <hr>
+
+        <div class="product-list">
+            <a href="./st1.html" class="product">
+                <img src="./img/st1.jpg" width="225" height="330">
+                <div class="product-name">
+                    <strong>취미는 사생활</strong>
+                </div>
+                <div class="product-price">
+                
+                    <p class ="prodDt_info">
+                        <span>장진영 저자</span>
+                        <span>
+                            "은행나무"
+                        </span>
+                    </p>
+                    <div class = "proDt_price">
+                        <p>
+                            <i>소장</i>
+                            <em>10%</em>
+                            <span>
+                                <b>9,360</b>
+                                "원"
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            
+            <div class="product-list">
+                <a href="./st1.html" class="product">
+                    <img src="./img/st1.jpg" width="225" height="330">
+                    <div class="product-name">
+                        <strong>취미는 사생활</strong>
+                    </div>
+                    <div class="product-price">
+                    
+                        <p class ="prodDt_info">
+                            <span>장진영 저자</span>
+                            <span>
+                                "은행나무"
+                            </span>
+                        </p>
+                        <div class = "proDt_price">
+                            <p>
+                                <i>소장</i>
+                                <em>10%</em>
+                                <span>
+                                    <b>9,360</b>
+                                    "원"
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            
+                <div class="product-list">
+                    <a href="./st1.html" class="product">
+                        <img src="./img/st1.jpg" width="225" height="330">
+                        <div class="product-name">
+                            <strong>취미는 사생활</strong>
+                        </div>
+                        <div class="product-price">
+                        
+                            <p class ="prodDt_info">
+                                <span>장진영 저자</span>
+                                <span>
+                                    "은행나무"
+                                </span>
+                            </p>
+                            <div class = "proDt_price">
+                                <p>
+                                    <i>소장</i>
+                                    <em>10%</em>
+                                    <span>
+                                        <b>9,360</b>
+                                        "원"
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+            
+                    <div class="product-list">
+                        <a href="./st1.html" class="product">
+                            <img src="./img/st1.jpg" width="225" height="330">
+                            <div class="product-name">
+                                <strong>취미는 사생활</strong>
+                            </div>
+                            <div class="product-price">
+                            
+                                <p class ="prodDt_info">
+                                    <span>장진영 저자</span>
+                                    <span>
+                                        "은행나무"
+                                    </span>
+                                </p>
+                                <div class = "proDt_price">
+                                    <p>
+                                        <i>소장</i>
+                                        <em>10%</em>
+                                        <span>
+                                            <b>9,360</b>
+                                            "원"
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+            
+                        <div class="product-list">
+                            <a href="./st1.html" class="product">
+                                <img src="./img/st1.jpg" width="225" height="330">
+                                <div class="product-name">
+                                    <strong>취미는 사생활</strong>
+                                </div>
+                                <div class="product-price">
+                                
+                                    <p class ="prodDt_info">
+                                        <span>장진영 저자</span>
+                                        <span>
+                                            "은행나무"
+                                        </span>
+                                    </p>
+                                    <div class = "proDt_price">
+                                        <p>
+                                            <i>소장</i>
+                                            <em>10%</em>
+                                            <span>
+                                                <b>9,360</b>
+                                                "원"
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+            
+                            <div class="product-list">
+                                <a href="./st1.html" class="product">
+                                    <img src="./img/st1.jpg" width="225" height="330">
+                                    <div class="product-name">
+                                        <strong>취미는 사생활</strong>
+                                    </div>
+                                    <div class="product-price">
+                                    
+                                        <p class ="prodDt_info">
+                                            <span>장진영 저자</span>
+                                            <span>
+                                                "은행나무"
+                                            </span>
+                                        </p>
+                                        <div class = "proDt_price">
+                                            <p>
+                                                <i>소장</i>
+                                                <em>10%</em>
+                                                <span>
+                                                    <b>9,360</b>
+                                                    "원"
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <div class="product-list">
+                                    <a href="./st1.html" class="product">
+                                        <img src="./img/st1.jpg" width="225" height="330">
+                                        <div class="product-name">
+                                            <strong>취미는 사생활</strong>
+                                        </div>
+                                        <div class="product-price">
+                                        
+                                            <p class ="prodDt_info">
+                                                <span>장진영 저자</span>
+                                                <span>
+                                                    "은행나무"
+                                                </span>
+                                            </p>
+                                            <div class = "proDt_price">
+                                                <p>
+                                                    <i>소장</i>
+                                                    <em>10%</em>
+                                                    <span>
+                                                        <b>9,360</b>
+                                                        "원"
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+            
+            <div class="product-list">
+                <a href="./st1.html" class="product">
+                    <img src="./img/st1.jpg" width="225" height="330">
+                    <div class="product-name">
+                        <strong>취미는 사생활</strong>
+                    </div>
+                    <div class="product-price">
+                    
+                        <p class ="prodDt_info">
+                            <span>장진영 저자</span>
+                            <span>
+                                "은행나무"
+                            </span>
+                        </p>
+                        <div class = "proDt_price">
+                            <p>
+                                <i>소장</i>
+                                <em>10%</em>
+                                <span>
+                                    <b>9,360</b>
+                                    "원"
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            
+            <div class="product-list">
+                <a href="./st1.html" class="product">
+                    <img src="./img/st1.jpg" width="225" height="330">
+                    <div class="product-name">
+                        <strong>취미는 사생활</strong>
+                    </div>
+                    <div class="product-price">
+                    
+                        <p class ="prodDt_info">
+                            <span>장진영 저자</span>
+                            <span>
+                                "은행나무"
+                            </span>
+                        </p>
+                        <div class = "proDt_price">
+                            <p>
+                                <i>소장</i>
+                                <em>10%</em>
+                                <span>
+                                    <b>9,360</b>
+                                    "원"
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="footer">
+            <a href="http://faceboo.com">
+                <img src="https://bakey-api.codeit.kr/files/629/images/facebook.png" height="20">
+            </a>
+            <a href="http://faceboo.com">
+                <img src="https://bakey-api.codeit.kr/files/629/images/instagram.png" height="20">
+            </a>
+            <a href="http://faceboo.com">
+                <img src="https://bakey-api.codeit.kr/files/629/images/twitter.png" height="20">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
