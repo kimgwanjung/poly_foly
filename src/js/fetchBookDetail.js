@@ -1,5 +1,5 @@
 function fetchBookDetail(id) {
-  fetch(`_data/bookDetail_${id}.json`)
+  fetch(`../_data/bookDetail_${id}.json`)
     .then((response) => response.json())
     .then((data) => {
       console.log(data, "d");
