@@ -28,8 +28,8 @@
     background-color: white;
     height: 100px;
     color: black;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 120px;
+    padding-right: 120px;
 
   }
   .top-bar .menu-box-1 > ul{
@@ -260,7 +260,10 @@ a {
 }
 
 
-
+#logo {
+  width: 100px;
+  height: 100px;
+}
 
 /*index 슬라이드 구현*/
 img {

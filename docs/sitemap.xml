@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/about.html</loc>
-</url>
-<url>
 <loc>http://localhost:4000/cartoon.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/company.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/fantasy.html</loc>
@@ -42,7 +36,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/_includes/header.html</loc>
-<lastmod>2023-05-28T17:33:20+09:00</lastmod>
+<lastmod>2023-05-29T00:48:59+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/_includes/nav.html</loc>
@@ -62,7 +56,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/_includes/subheader.html</loc>
-<lastmod>2023-05-28T19:07:22+09:00</lastmod>
+<lastmod>2023-05-29T00:46:38+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/join.html</loc>
@@ -70,6 +64,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/login.html</loc>
-<lastmod>2023-05-28T20:52:32+09:00</lastmod>
+<lastmod>2023-05-29T00:51:06+09:00</lastmod>
 </url>
 </urlset>
