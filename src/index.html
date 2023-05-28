@@ -1,100 +1,111 @@
 ---
 layout: base
 ---
-<link rel="stylesheet" href="./css/index.css">
-<link rel="stylesheet" href="./css/today.css">
-    <div class="banner-container">
-        <div class="banner">
+<div class="banner-container">
+    <div class="banner">
         <div data-index=1>
 
-                <img src="./img/1.jpg" alt="Image">
+            <img alt="Image" src="./img/1.jpg">
 
         </div>
         <div data-index=2></div>
 
-                <img src="./img/2.jpg" alt="Image">
+        <img alt="Image" src="./img/2.jpg">
 
         <div data-index=3></div>
 
-                <img src="./img/3.jpg" alt="Image">
+        <img alt="Image" src="./img/3.jpg">
 
         <div data-index=4></div>
 
-                <img src="./img/4png.png" alt="Image">
+        <img alt="Image" src="./img/4png.png">
+    </div>
+</div>
+
+
+<div class="list-button">
+    <span class="list-button-item active"></span>
+    <span class="list-button-item"></span>
+    <span class="list-button-item"></span>
+    <span class="list-button-item"></span>
+</div>
+
+<div class="container">
+
+    <div class="inner">
+        <input type="search">
+        <div class="searching">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="icon_ect">
+            <i class="fas fa-keyboard"></i>
+            <i class="fas fa-microphone"></i>
         </div>
     </div>
+</div>
 
 
-    <div class="list-button">
-        <span class="list-button-item active"></span> 
-        <span class="list-button-item"></span> 
-        <span class="list-button-item"></span> 
-        <span class="list-button-item"></span> 
-    </div>
-
-    <div class="container">
-    
-        <div class="inner">
-            <input type="search">
-            <div class="searching">
-                <i class="fas fa-search"></i>
-            </div>
-            <div class="icon_ect">
-                <i class="fas fa-keyboard"></i>
-                <i class="fas fa-microphone"></i>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="today-h2">
-        <h2>오늘의 책</h2>
-    </div>
-    <div id="container">
-        <div class="slide_wrap">
+<div class="today-h2">
+    <h2>오늘의 책</h2>
+</div>
+<div id="container">
+    <div class="slide_wrap">
         <div class="slide_box">
             <div class="slide_list clearfix">
-            <div class="slide_content slide01">
-                <img src="./img/todaybook1.jpg" class="today-img">
-            </div>
-            <div class="slide_content slide02">
-                <img src="./img/todaybook2.jpg" class="today-img">
-            </div>
-            <div class="slide_content slide03">
-                <img src="./img/todaybook3.jpg" class="today-img">
-            </div>
-            <div class="slide_content slide04">
-                <img src="./img/todaybook4.jpg" class="today-img">
-            </div>
-            <div class="slide_content slide05">
-                <img src="./img/todaybook5.jpg" class="today-img">
-            </div>
+                <div class="slide_content slide01">
+                    <img class="today-img" src="./img/todaybook1.jpg">
+                </div>
+                <div class="slide_content slide02">
+                    <img class="today-img" src="./img/todaybook2.jpg">
+                </div>
+                <div class="slide_content slide03">
+                    <img class="today-img" src="./img/todaybook3.jpg">
+                </div>
+                <div class="slide_content slide04">
+                    <img class="today-img" src="./img/todaybook4.jpg">
+                </div>
+                <div class="slide_content slide05">
+                    <img class="today-img" src="./img/todaybook5.jpg">
+                </div>
             </div>
             <!-- // .slide_list -->
         </div>
         <!-- // .slide_box -->
-        <div class="slide_btn_box">
-            <button type="button" class="slide_btn_prev"> < </button>
-            <button type="button" class="slide_btn_next"> > </button>
+        <div class="slide_btn_box">ㅣ
+            <button class="slide_btn_prev" type="button"> <</button>
+            <button class="slide_btn_next" type="button"> ></button>
         </div>
         <!-- // .slide_btn_box -->
         <ul class="slide_pagination"></ul>
         <!-- // .slide_pagination -->
-        </div>
-        <!-- // .slide_wrap -->
     </div>
+    <!-- // .slide_wrap -->
+</div>
+
+
+<!-- // 오늘의 책 리스트 data fetch 받아서 뿌리는 부분 -->
+
+<div id="book-wrapper">
+    <div class="title">오늘의 책</div>
+    <div class="book-list-wrapper">
+    </div>
+    <div class="title">md 추천도서</div>
+    <div class="book-list-suggestion-wrapper">
+    </div>
+</div>
+
+
+<script src="./js/today-slide.js"></script>
+<!-- // 오늘의 책 리스트 data fetch script모듈화 -->
+<script src="./js/fetchTodayBookList.js">
+</script>
+<!-- // MD 추천 리스트 data fetch script 모듈화 -->
+<script src="./js/fetchSuggestionBookList.js"></script>
+<!-- // data fetch 함수  모듈화-->
+<script>
+    fetchTodayBookList();
+    fetchSuggestionBookList();
+</script>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    <script src="./js/today-slide.js"></script>

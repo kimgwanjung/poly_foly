@@ -37,11 +37,53 @@
 </div>
 
     </header>
-        <div>
-        회사소개
+    <div id="container">
+    <div class="img-wrapper">
+        <img class="book-imgs" src="img/st1.jpg" />
     </div>
+    <div class="book-info">
+        <div class="title">
+            <!--            정말 잘 지내고 있나요?-->
+        </div>
+        <div class="price-wrapper">
+            <div class="price-percent"></div>
+            <div class="price"></div>
+        </div>
+        <div class="accumulate-wrapper">
+            <div class="accumulate-title">적립/혜택</div>
+            <div class="point"></div>
+        </div>
+        <div class="delivery-wrapper">
+            <div>
+                <div class="free-delivery">
+                    <div class="delivery-info">배송안내</div>
+                    <div class="free">무료배송</div>
+                </div>
+            </div>
+            <div>
+                <div class="start-date">
 
+                </div>
+            </div>
+            <div>
+                <div class="address">
 
+                </div>
+            </div>
+
+        </div>
+        <div class="btn-wrapper">
+            구입하기
+        </div>
+    </div>
+</div>
+<script src="./js/fetchBookDetail.js"></script>
+<script src="./js/getParameterByName.js"></script>
+<script>
+  // 라우터 주소에서 데이터 id 추출 & 상세 페이지 id 추출하여 data fetch 받는 부분 모듈화
+    const id = getParameterByName('id');
+    fetchBookDetail(id);
+</script>
 
     <footer class = "flex-container">
       <section>

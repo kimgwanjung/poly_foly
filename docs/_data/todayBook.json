@@ -1,0 +1,40 @@
+
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "취미는 사생활",
+      "author": "장지영 저자",
+      "price":"9,600",
+      "image":"./img/todaybook1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "실버뷰",
+      "author": "존 르 카레",
+      "price":"11,340",
+      "image":"./img/todaybook2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "각각의 계절",
+      "author": "다락원",
+      "price":"13,400",
+      "image":"./img/todaybook3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "평온한 삶",
+      "author": "이형석",
+      "price":"8,900",
+      "image":"./img/todaybook4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "도파민 네이션",
+      "author": "팀 켈러",
+      "price":"12,000",
+      "image":"./img/todaybook5.jpg"
+    }
+  ]
+}

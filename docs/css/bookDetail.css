@@ -1,0 +1,109 @@
+
+#container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.book-imgs {
+    width: 380px;
+    height: 540px;
+    padding-right: 70px;
+}
+
+.book-info {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.title {
+    color: #000;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.price-wrapper {
+    display: flex;
+    font-size: 24px;
+    justify-content: flex-start;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 14px;
+
+}
+
+.price-percent {
+    padding-right: 10px;
+    color: #4dac27;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 24px !important;
+    font-weight: bold;
+}
+
+.accumulate-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 14px;
+
+}
+
+.accumulate-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.point {
+    color: #4dac27;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.delivery-wrapper {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 14px;
+
+}
+
+.free-delivery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.delivery-info {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.free {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.start-date {
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.address {
+    text-align: right;
+    font-weight: bold;
+}
+
+.btn-wrapper {
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+}
+
+

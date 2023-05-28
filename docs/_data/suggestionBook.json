@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "title": "유연함의 힘",
+      "author": "장지영 저자",
+      "price":"9,600",
+      "image":"./img/st1.jpg"
+    },
+    {
+      "title": "도파미네이션",
+      "author": "양귀자",
+      "price":"11,340",
+      "image":"./img/st2.jpg"
+    },
+    {
+      "title": "도둑맞은 집중력",
+      "author": "이임숙",
+      "price":"13,400",
+      "image":"./img/st3.jpg"
+    },
+    {
+      "title": "평온한 삶",
+      "author": "박빛나",
+      "price":"8,900",
+      "image":"./img/st4.jpg"
+    },
+    {
+      "title": "모순",
+      "author": "존 르 카레",
+      "price":"12,000",
+      "image":"./img/st5.jpg"
+    }
+  ]
+}

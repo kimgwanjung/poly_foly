@@ -5,6 +5,9 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://html.jiny.dev" # the base hostname & protocol for your site, e.g. http://example.com
 
+
+include: ["_data","_includes"]
+
 twitter_username: infohojin
 github_username:  infohojin
 
