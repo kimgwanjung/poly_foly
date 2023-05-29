@@ -28,13 +28,6 @@
       "author": "이형석",
       "price":"8,900",
       "image":"./img/todaybook4.jpg"
-    },
-    {
-      "id": 5,
-      "title": "도파민 네이션",
-      "author": "팀 켈러",
-      "price":"12,000",
-      "image":"./img/todaybook5.jpg"
     }
   ]
 }

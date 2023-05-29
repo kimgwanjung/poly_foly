@@ -23,12 +23,6 @@
       "author": "고정욱",
       "price":"8,900",
       "image":"./img/audio5.jpeg"
-    },
-    {
-      "title": "영혼의 설계자",
-      "author": "존 르 카레",
-      "price":"12,000",
-      "image":"./img/audio4.jpeg"
     }
   ]
 }

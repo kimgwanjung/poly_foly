@@ -23,12 +23,6 @@
       "author": "박빛나",
       "price":"8,900",
       "image":"./img/st4.jpg"
-    },
-    {
-      "title": "모순",
-      "author": "존 르 카레",
-      "price":"12,000",
-      "image":"./img/st5.jpg"
     }
   ]
 }

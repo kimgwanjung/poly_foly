@@ -267,10 +267,8 @@ a {
 
 /*index 슬라이드 구현*/
 #index-slide {
-  width: 1200px;
+  width: 1207px;
   height : 340px;
-  margin-left: 10px;
-  margin-right: 10px;
   justify-content: center;
 }
 .banner-container{
@@ -279,7 +277,7 @@ a {
   /* overflow:hidden; */
 }
 .banner{
-  width:120pxs;
+  width:1207px;
   height:100%;
   display:flex;
   animation: animation1 10s infinite;
