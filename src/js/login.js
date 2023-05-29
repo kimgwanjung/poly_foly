@@ -1,6 +1,5 @@
 function handleLogin() {
-    // Here, you can perform the necessary login logic
-    // and redirect the user to the index.html page
+
     alert("로그인이 되었습니다.");
     window.location.href = "index.html";
 }

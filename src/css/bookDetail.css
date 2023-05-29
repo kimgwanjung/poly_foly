@@ -112,3 +112,7 @@ button {
     appearance: none;
 }
 
+.btn-gradient{
+    background-color: white;
+}
+
