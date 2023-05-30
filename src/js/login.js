@@ -15,7 +15,6 @@ function handleIdStorage() {
     }
 }
 
-// Restore saved ID on page load
 window.onload = function() {
     var savedId = localStorage.getItem("savedId");
     var idInput = document.getElementById("exampleInputEmail1");

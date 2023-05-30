@@ -66,19 +66,12 @@
     <span class="list-button-item"></span>
 </div>
 
-<div class="container">
 
-    <div class="inner">
-        <input type="search">
-        <div class="searching">
-            <i class="fas fa-search"></i>
-        </div>
-        <div class="icon_ect">
-            <i class="fas fa-keyboard"></i>
-            <i class="fas fa-microphone"></i>
-        </div>
-    </div>
+<div class="search-container">
+    <input type="search" id="search-input" placeholder="책 검색">
+    <button id="search-btn">검색</button>
 </div>
+<div id="search-results"></div>
 
 
 <div class="today-h2">
@@ -107,7 +100,7 @@
             <!-- // .slide_list -->
         </div>
         <!-- // .slide_box -->
-        <div class="slide_btn_box">ㅣ
+        <div class="slide_btn_box">
             <button class="slide_btn_prev" type="button"> <</button>
             <button class="slide_btn_next" type="button"> ></button>
         </div>
@@ -119,7 +112,7 @@
 </div>
 
 
-<!-- // 오늘의 책 리스트 data fetch 받아서 뿌리는 부분 -->
+<!-- 오늘의 책 리스트 data fetch 받아서 뿌리는 부분 -->
 
 <div id="book-wrapper">
     <div class="title">오늘의 책</div>
@@ -228,7 +221,7 @@
 <script src="./js/today-slide.js"></script>
 <script src="./js/fetchTodayBookList.js"></script>
 <script src="./js/fetchSuggestionBookList.js"></script>
-
+<script src="./js/search.js"></script>
     <footer class = "flex-container">
         <section>
     <div>

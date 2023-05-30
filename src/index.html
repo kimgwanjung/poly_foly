@@ -32,19 +32,12 @@ layout: base
     <span class="list-button-item"></span>
 </div>
 
-<div class="container">
 
-    <div class="inner">
-        <input type="search">
-        <div class="searching">
-            <i class="fas fa-search"></i>
-        </div>
-        <div class="icon_ect">
-            <i class="fas fa-keyboard"></i>
-            <i class="fas fa-microphone"></i>
-        </div>
-    </div>
+<div class="search-container">
+    <input type="search" id="search-input" placeholder="책 검색">
+    <button id="search-btn">검색</button>
 </div>
+<div id="search-results"></div>
 
 
 <div class="today-h2">
@@ -128,3 +121,4 @@ layout: base
 <script src="./js/today-slide.js"></script>
 <script src="./js/fetchTodayBookList.js"></script>
 <script src="./js/fetchSuggestionBookList.js"></script>
+<script src="./js/search.js"></script>
