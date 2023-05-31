@@ -51,182 +51,172 @@
 <!-- 인데스 시작 -->
 
     <div class="container">
-
     <div class="banner-container">
-        <div class="banner">
-            <div data-index=1>
-    
-                <img alt="Image" src="./img/1.jpg" id="index-slide">
-    
-            </div>
-            <div data-index=2></div>
-    
-            <img alt="Image" src="./img/2.jpg" id="index-slide">
-    
-            <div data-index=3></div>
-    
-            <img alt="Image" src="./img/3.jpg" id="index-slide">
-    
-            <div data-index=4></div>
-    
-            <img alt="Image" src="./img/4png.png" id="index-slide">
+    <div class="banner">
+        <div data-index=1>
+
+            <img alt="Image" src="./img/1.jpg" id="index-slide">
+
         </div>
+        <div data-index=2></div>
+
+        <img alt="Image" src="./img/2.jpg" id="index-slide">
+
+        <div data-index=3></div>
+
+        <img alt="Image" src="./img/3.jpg" id="index-slide">
+
+        <div data-index=4></div>
+
+        <img alt="Image" src="./img/4png.png" id="index-slide">
     </div>
-    
-    
-    
-    
-    
+</div>
     <div class="search-container">
-        <input type="search" id="search-input" placeholder="책 검색">
-        <button id="search-btn">검색</button>
-    </div>
-    <div id="search-results"></div>
-    
-    
+    <input type="search" id="search-input" placeholder="책 검색">
+    <button id="search-btn">검색</button>
+</div>
+<div id="search-results"></div>
     <div class="today-h2">
-        <h2>오늘의 책</h2>
-    </div>
-    <div id="container">
-        <div class="slide_wrap">
-            <div class="slide_box">
-                <div class="slide_list clearfix">
-                    <div class="slide_content slide01">
-                        <img class="today-img" src="./img/todaybook1.jpg">
-                    </div>
-                    <div class="slide_content slide02">
-                        <img class="today-img" src="./img/todaybook2.jpg">
-                    </div>
-                    <div class="slide_content slide03">
-                        <img class="today-img" src="./img/todaybook3.jpg">
-                    </div>
-                    <div class="slide_content slide04">
-                        <img class="today-img" src="./img/todaybook4.jpg">
-                    </div>
-                    <div class="slide_content slide05">
-                        <img class="today-img" src="./img/todaybook5.jpg">
-                    </div>
+    <h2>오늘의 책</h2>
+</div>
+<div id="container">
+    <div class="slide_wrap">
+        <div class="slide_box">
+            <div class="slide_list clearfix">
+                <div class="slide_content slide01">
+                    <img class="today-img" src="./img/todaybook1.jpg">
                 </div>
-                <!-- // .slide_list -->
+                <div class="slide_content slide02">
+                    <img class="today-img" src="./img/todaybook2.jpg">
+                </div>
+                <div class="slide_content slide03">
+                    <img class="today-img" src="./img/todaybook3.jpg">
+                </div>
+                <div class="slide_content slide04">
+                    <img class="today-img" src="./img/todaybook4.jpg">
+                </div>
+                <div class="slide_content slide05">
+                    <img class="today-img" src="./img/todaybook5.jpg">
+                </div>
             </div>
-            <!-- // .slide_box -->
-            <div class="slide_btn_box">
-                <button class="slide_btn_prev" type="button"> <</button>
-                <button class="slide_btn_next" type="button"> ></button>
-            </div>
-            <!-- // .slide_btn_box -->
-            <ul class="slide_pagination"></ul>
-            <!-- // .slide_pagination -->
+            <!-- // .slide_list -->
         </div>
-        <!-- // .slide_wrap -->
+        <!-- // .slide_box -->
+        <div class="slide_btn_box">
+            <button class="slide_btn_prev" type="button"> <</button>
+            <button class="slide_btn_next" type="button"> ></button>
+        </div>
+        <!-- // .slide_btn_box -->
+        <ul class="slide_pagination"></ul>
+        <!-- // .slide_pagination -->
     </div>
+    <!-- // .slide_wrap -->
+</div>
+     <!-- 오늘의 책 리스트 data fetch 받아서 뿌리는 부분 -->
     
-    
-    <!-- 오늘의 책 리스트 data fetch 받아서 뿌리는 부분 -->
-    
-    <div id="book-wrapper">
-        <div class="title">오늘의 책</div>
-        <div class="book-list-wrapper">
-            
-            <a class="book-item-wrapper">
-                <img alt="취미는 사생활" class="book-img" src="./img/todaybook1.jpg">
-                <div class="book-title">취미는 사생활</div>
-                <div class="author">장지영 저자</div>
-                <div class="price"><span class="price-bold">9,600</span>원</div>
-            </a>
-    
-            
-            <a class="book-item-wrapper">
-                <img alt="실버뷰" class="book-img" src="./img/todaybook2.jpg">
-                <div class="book-title">실버뷰</div>
-                <div class="author">존 르 카레</div>
-                <div class="price"><span class="price-bold">11,340</span>원</div>
-            </a>
-    
-            
-            <a class="book-item-wrapper">
-                <img alt="각각의 계절" class="book-img" src="./img/todaybook3.jpg">
-                <div class="book-title">각각의 계절</div>
-                <div class="author">다락원</div>
-                <div class="price"><span class="price-bold">13,400</span>원</div>
-            </a>
-    
-            
-            <a class="book-item-wrapper">
-                <img alt="평온한 삶" class="book-img" src="./img/todaybook4.jpg">
-                <div class="book-title">평온한 삶</div>
-                <div class="author">이형석</div>
-                <div class="price"><span class="price-bold">8,900</span>원</div>
-            </a>
-    
-            
-        </div>
-        <div class="title">md 추천도서</div>
-        <div class="book-list-suggestion-wrapper">
-            
-            <a class="book-item-wrapper">
-                <img alt="유연함의 힘" class="book-img" src="./img/st1.jpg">
-                <div class="book-title">유연함의 힘</div>
-                <div class="author">장지영 저자</div>
-                <div class="price"><span class="price-bold">9,600</span>원</div>
-            </a>
-            
-            <a class="book-item-wrapper">
-                <img alt="도파미네이션" class="book-img" src="./img/st2.jpg">
-                <div class="book-title">도파미네이션</div>
-                <div class="author">양귀자</div>
-                <div class="price"><span class="price-bold">11,340</span>원</div>
-            </a>
-            
-            <a class="book-item-wrapper">
-                <img alt="도둑맞은 집중력" class="book-img" src="./img/st3.jpg">
-                <div class="book-title">도둑맞은 집중력</div>
-                <div class="author">이임숙</div>
-                <div class="price"><span class="price-bold">13,400</span>원</div>
-            </a>
-            
-            <a class="book-item-wrapper">
-                <img alt="평온한 삶" class="book-img" src="./img/st4.jpg">
-                <div class="book-title">평온한 삶</div>
-                <div class="author">박빛나</div>
-                <div class="price"><span class="price-bold">8,900</span>원</div>
-            </a>
-            
-        </div>
-        <div class="title">오디오</div>
-        <div class="book-list-suggestion-wrapper">
-            
-            <a class="book-item-wrapper">
-                <img alt="컨티뉴어스" class="book-img" src="./img/audio1.jpeg">
-                <div class="book-title">컨티뉴어스</div>
-                <div class="author">윤소정 저자</div>
-                <div class="price"><span class="price-bold">19,800</span>원</div>
-            </a>
-            
-            <a class="book-item-wrapper">
-                <img alt="서영동 이야기" class="book-img" src="./img/audio2.jpeg">
-                <div class="book-title">서영동 이야기</div>
-                <div class="author">조남주</div>
-                <div class="price"><span class="price-bold">16,200</span>원</div>
-            </a>
-            
-            <a class="book-item-wrapper">
-                <img alt="이 사람을 보라" class="book-img" src="./img/audio3.jpeg">
-                <div class="book-title">이 사람을 보라</div>
-                <div class="author">니체</div>
-                <div class="price"><span class="price-bold">13,680</span>원</div>
-            </a>
-            
-            <a class="book-item-wrapper">
-                <img alt="책이 사라진 날" class="book-img" src="./img/audio5.jpeg">
-                <div class="book-title">책이 사라진 날</div>
-                <div class="author">고정욱</div>
-                <div class="price"><span class="price-bold">8,900</span>원</div>
-            </a>
-            
-        </div>
+ <div id="book-wrapper">
+    <div class="title">오늘의 책</div>
+    <div class="book-list-wrapper">
+        
+        <a class="book-item-wrapper">
+            <img alt="취미는 사생활" class="book-img" src="./img/todaybook1.jpg">
+            <div class="book-title">취미는 사생활</div>
+            <div class="author">장지영 저자</div>
+            <div class="price"><span class="price-bold">9,600</span>원</div>
+        </a>
+
+        
+        <a class="book-item-wrapper">
+            <img alt="실버뷰" class="book-img" src="./img/todaybook2.jpg">
+            <div class="book-title">실버뷰</div>
+            <div class="author">존 르 카레</div>
+            <div class="price"><span class="price-bold">11,340</span>원</div>
+        </a>
+
+        
+        <a class="book-item-wrapper">
+            <img alt="각각의 계절" class="book-img" src="./img/todaybook3.jpg">
+            <div class="book-title">각각의 계절</div>
+            <div class="author">다락원</div>
+            <div class="price"><span class="price-bold">13,400</span>원</div>
+        </a>
+
+        
+        <a class="book-item-wrapper">
+            <img alt="평온한 삶" class="book-img" src="./img/todaybook4.jpg">
+            <div class="book-title">평온한 삶</div>
+            <div class="author">이형석</div>
+            <div class="price"><span class="price-bold">8,900</span>원</div>
+        </a>
+
+        
     </div>
+    <div class="title">md 추천도서</div>
+    <div class="book-list-suggestion-wrapper">
+        
+        <a class="book-item-wrapper">
+            <img alt="유연함의 힘" class="book-img" src="./img/st1.jpg">
+            <div class="book-title">유연함의 힘</div>
+            <div class="author">장지영 저자</div>
+            <div class="price"><span class="price-bold">9,600</span>원</div>
+        </a>
+        
+        <a class="book-item-wrapper">
+            <img alt="도파미네이션" class="book-img" src="./img/st2.jpg">
+            <div class="book-title">도파미네이션</div>
+            <div class="author">양귀자</div>
+            <div class="price"><span class="price-bold">11,340</span>원</div>
+        </a>
+        
+        <a class="book-item-wrapper">
+            <img alt="도둑맞은 집중력" class="book-img" src="./img/st3.jpg">
+            <div class="book-title">도둑맞은 집중력</div>
+            <div class="author">이임숙</div>
+            <div class="price"><span class="price-bold">13,400</span>원</div>
+        </a>
+        
+        <a class="book-item-wrapper">
+            <img alt="평온한 삶" class="book-img" src="./img/st4.jpg">
+            <div class="book-title">평온한 삶</div>
+            <div class="author">박빛나</div>
+            <div class="price"><span class="price-bold">8,900</span>원</div>
+        </a>
+        
     </div>
+    <div class="title">오디오</div>
+    <div class="book-list-suggestion-wrapper">
+        
+        <a class="book-item-wrapper">
+            <img alt="컨티뉴어스" class="book-img" src="./img/audio1.jpeg">
+            <div class="book-title">컨티뉴어스</div>
+            <div class="author">윤소정 저자</div>
+            <div class="price"><span class="price-bold">19,800</span>원</div>
+        </a>
+        
+        <a class="book-item-wrapper">
+            <img alt="서영동 이야기" class="book-img" src="./img/audio2.jpeg">
+            <div class="book-title">서영동 이야기</div>
+            <div class="author">조남주</div>
+            <div class="price"><span class="price-bold">16,200</span>원</div>
+        </a>
+        
+        <a class="book-item-wrapper">
+            <img alt="이 사람을 보라" class="book-img" src="./img/audio3.jpeg">
+            <div class="book-title">이 사람을 보라</div>
+            <div class="author">니체</div>
+            <div class="price"><span class="price-bold">13,680</span>원</div>
+        </a>
+        
+        <a class="book-item-wrapper">
+            <img alt="책이 사라진 날" class="book-img" src="./img/audio5.jpeg">
+            <div class="book-title">책이 사라진 날</div>
+            <div class="author">고정욱</div>
+            <div class="price"><span class="price-bold">8,900</span>원</div>
+        </a>
+        
+    </div>
+</div>
+</div>
     
     
     <script src="./js/today-slide.js"></script>

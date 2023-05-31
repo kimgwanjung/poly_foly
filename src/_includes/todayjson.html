@@ -1,0 +1,38 @@
+ <!-- 오늘의 책 리스트 data fetch 받아서 뿌리는 부분 -->
+    
+ <div id="book-wrapper">
+    <div class="title">오늘의 책</div>
+    <div class="book-list-wrapper">
+        {% for book in site.data.todayBook.data %}
+        <a class="book-item-wrapper">
+            <img alt="{{ book.title }}" class="book-img" src="{{ book.image }}">
+            <div class="book-title">{{ book.title }}</div>
+            <div class="author">{{ book.author }}</div>
+            <div class="price"><span class="price-bold">{{ book.price }}</span>원</div>
+        </a>
+
+        {% endfor %}
+    </div>
+    <div class="title">md 추천도서</div>
+    <div class="book-list-suggestion-wrapper">
+        {% for book in site.data.suggestionBook.data %}
+        <a class="book-item-wrapper">
+            <img alt="{{ book.title }}" class="book-img" src="{{ book.image }}">
+            <div class="book-title">{{ book.title }}</div>
+            <div class="author">{{ book.author }}</div>
+            <div class="price"><span class="price-bold">{{ book.price }}</span>원</div>
+        </a>
+        {% endfor %}
+    </div>
+    <div class="title">오디오</div>
+    <div class="book-list-suggestion-wrapper">
+        {% for book in site.data.audioBook.data %}
+        <a class="book-item-wrapper">
+            <img alt="{{ book.title }}" class="book-img" src="{{ book.image }}">
+            <div class="book-title">{{ book.title }}</div>
+            <div class="author">{{ book.author }}</div>
+            <div class="price"><span class="price-bold">{{ book.price }}</span>원</div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
