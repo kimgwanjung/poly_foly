@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>페이지네이션 예시</title>
+    <style>
+        /* CSS 스타일링 */
+        .table-container {
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid #ddd;
+        }
+        .pagination a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+        .odd-row {
+            background-color: yellow;
+        }
+        .even-row {
+            background-color: red;
+        }
+        .selected-row {
+            background-color: blue !important;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table id="data-table">
+        <thead>
+            <tr>
+                <th><input type="checkbox" id="check-all"></th>
+                <th>ID</th>
+                <th>제목</th>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+        </table>
+    </div>
+
+    <div class="pagination" id="pagination"></div>
+
+    <script>
+        let dragSrcEl = null;
+
+        function handleDragStart(e) {
+            this.style.opacity = '0.4';
+            dragSrcEl = this;
+
+            e.dataTransfer.effectAllowed = 'move';
+            e.dataTransfer.setData('text/html', this.innerHTML);
+        }
+
+        function handleDragOver(e) {
+            if (e.preventDefault) {
+                e.preventDefault();
+            }
+
+            e.dataTransfer.dropEffect = 'move';
+
+            return false;
+        }
+
+        function handleDrop(e) {
+            if (e.stopPropagation) {
+                e.stopPropagation();
+            }
+
+            if (dragSrcEl !== this) {
+                dragSrcEl.innerHTML = this.innerHTML;
+                this.innerHTML = e.dataTransfer.getData('text/html');
+            }
+
+            return false;
+        }
+
+        function handleDragEnd(e) {
+            this.style.opacity = '1';
+
+            items.forEach(function (item) {
+                item.classList.remove('over');
+            });
+        }
+
+        function fetchData(page) {
+            const xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        const tableData = JSON.parse(xhr.responseText);
+                        const itemsPerPage = 10;
+                        const start = (page - 1) * itemsPerPage;
+                        const end = start + itemsPerPage;
+                        const pageData = tableData.slice(start, end);
+                        displayTableData(pageData, start);
+                        displayPaginationButtons(Math.ceil(tableData.length / itemsPerPage), page);
+                        uncheckAll();
+                    } else {
+                        console.error('Failed to fetch data');
+                    }
+                }
+            };
+            xhr.open('GET', 'forum.json', true);
+            xhr.send();
+        }
+
+        function displayTableData(data, start) {
+            const tableBody = document.getElementById('table-body');
+            tableBody.innerHTML = '';
+
+            for (let i = 0; i < data.length; i++) {
+                const row = tableBody.insertRow();
+
+                const checkboxCell = row.insertCell();
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        row.classList.add('selected-row');
+                        row.setAttribute('draggable', true);
+                        row.addEventListener('dragstart', handleDragStart, false);
+                        row.addEventListener('dragover', handleDragOver, false);
+                        row.addEventListener('drop', handleDrop, false);
+                        row.addEventListener('dragend', handleDragEnd, false);
+                    } else {
+                        row.classList.remove('selected-row');
+                        row.setAttribute('draggable', false);
+                        row.removeEventListener('dragstart', handleDragStart, false);
+                        row.removeEventListener('dragover', handleDragOver, false);
+                        row.removeEventListener('drop', handleDrop, false);
+                        row.removeEventListener('dragend', handleDragEnd, false);
+                    }
+                });
+                checkboxCell.appendChild(checkbox);
+
+                row.insertCell().innerText = data[i].id;
+                row.insertCell().innerText = data[i].title;
+
+                if ((start + i + 1) % 2 === 0) {
+                    row.classList.add('even-row');
+                } else {
+                    row.classList.add('odd-row');
+                }
+            }
+        }
+
+        function displayPaginationButtons(totalPages, currentPage) {
+            const pagination = document.getElementById('pagination');
+            pagination.innerHTML = '';
+
+            for (let i = 1; i <= totalPages; i++) {
+                const button = document.createElement('a');
+                button.href = '#';
+                button.innerText = i;
+
+                if (i === currentPage) {
+                    button.classList.add('active');
+                }
+
+                button.addEventListener('click', function() {
+                    currentPage = i;
+                    fetchData(currentPage);
+                });
+
+                pagination.appendChild(button);
+            }
+        }
+
+        function uncheckAll() {
+            const checkAllBox = document.getElementById('check-all');
+            const checkboxes = document.querySelectorAll('#table-body input[type="checkbox"]');
+            checkAllBox.checked = false;
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = false;
+                checkbox.parentElement.parentElement.classList.remove('selected-row');
+            });
+        }
+
+        const checkAllBox = document.getElementById('check-all');
+        checkAllBox.addEventListener('change', function() {
+            const checkboxes = document.querySelectorAll('#table-body input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = this.checked;
+                if (this.checked) {
+                    checkbox.parentElement.parentElement.classList.add('selected-row');
+                } else {
+                    checkbox.parentElement.parentElement.classList.remove('selected-row');
+                }
+            });
+        });
+
+        fetchData(1);
+    </script>
+</body>
+</html>
